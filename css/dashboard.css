@@ -83,7 +83,7 @@
 }
 /*scrollbar*/
    ::-webkit-scrollbar {width:11px; height:11px;}
-    ::-webkit-scrollbar-track {border:5px solid #fff; background-color:#eee;}
+    ::-webkit-scrollbar-track {border:5px solid #f7f7f7; background-color:#eee;}
     ::-webkit-scrollbar-thumb {
         border:5px solid rgba(0, 0, 0, 0);
         background-clip:padding-box;
