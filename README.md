@@ -40,5 +40,5 @@ At the moment this layouts are available ( will be more available soon! ):
 | ------------- | ------------- |
 |[<img src="img/album.png" width="100%" alt=""><br>Album](https://zzseba78.github.io/Kick-Off/album.html)|[<img src="img/article.png" width="100%" alt=""><br>Article](https://zzseba78.github.io/Kick-Off/article.html)|
 |[<img src="img/dashboard.png" width="100%" alt=""><br>Dashboard](https://diomed.github.io/Knock-Off/dashboard.html)|[<img src="img/login.png" width="100%" alt=""><br>Login](https://diomed.github.io/Knock-Off/login.html)|
-|[<img src="img/login-dark.png" width="100%" alt=""><br>Login Dark](https://diomed.github.io/Knock-Off/login-dark.html)|[<img src="img/newsBlog.png" width="100%" alt=""><br>News Blog](https://diomed.github.io/Knock-Off/newsBlog.html)| 
+|[<img src="img/login-dark.png" width="100%" alt=""><br>Login Dark](https://diomed.github.io/Knock-Off/login-dark.html)|[<img src="img/newsBlog.png" width="100%" alt=""><br>News Blog](https://diomed.github.io/Knock-Off/news.html)| 
 |[<img src="img/price.png" width="100%" alt=""><br>Price](https://diomed.github.io/Knock-Off/price.html)|
