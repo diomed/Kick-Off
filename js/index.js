@@ -40,7 +40,7 @@ document.addEventListener(
           straight: !1,
           out_mode: "out",
           bounce: !1,
-          attract: { enable: !1, rotateX: 600, rotateY: 1200 }
+          attract: { enable: !1, rotateX: 600, rotateY: 400 }
         },
         nb: 80
       },
