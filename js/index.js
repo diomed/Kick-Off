@@ -3,7 +3,7 @@ document.addEventListener(
   function() {
     new particlesJS("particles-js", {
       particles: {
-        number: { value: 45, density: { enable: !0, value_area: 400 } },
+        number: { value: 45, density: { enable: !0, value_area: 1200 } },
         color: { value: "#7289da" },
         shape: {
           type: "star",
