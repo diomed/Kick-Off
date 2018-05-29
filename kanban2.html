@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<title>Kanban - UIkit 3 KickOff</title>
+		<!-- CSS FILES -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css">
+		<style>
+			.uk-container-small {
+				max-width: 1020px;
+			}
+			ul {list-style-type:square}
+		</style>
+	</head>
+	<body>
+		<div class="uk-offcanvas-content">
+			<!--HEADER-->
+			<header class="uk-box-shadow-small" style="background-color: white">
+				<div class="uk-container uk-container-expand">
+					<nav class="uk-navbar" id="navbar" data-uk-navbar>
+						<div class="uk-navbar-left">
+							<a class="uk-navbar-item uk-logo" href="#">Logo</a>
+						</div>
+						
+						<div class="uk-navbar-right">
+							<ul class="uk-navbar-nav uk-visible@m">
+								<li class="uk-active"><a href="#">Active</a></li>
+								<li><a href="#">Company</a></li>
+								<li><a href="#">Our Products</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+							<div class="uk-navbar-item">
+								<a class="uk-navbar-toggle uk-hidden@s" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+								<a href="dashboard.html" class="uk-button uk-button-secondary uk-visible@m"><span data-uk-icon="sign-in"></span>DASHBOARD</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!--/HEADER-->
+			
+			<!--AUTHOR-->
+			<section class="uk-section uk-section-muted uk-padding-remove-bottom">
+				<div class="uk-container uk-container-small">
+					<header class="uk-text-center">
+						<h1 class="uk-heading-primary">Price is right?</h1>
+						<p class="uk-width-3-5 uk-margin-auto">
+							Our Product is the easiest way for teams to track their works progress. Our advance plans give you more tools to get the job done.
+						</p>
+					</header>
+					<div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid>
+						
+						<!--kanban-->
+						<div>
+							<div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column" data-uk-scrollspy-class="uk-animation-slide-left-small">
+								<div class="uk-card-header uk-text-center">
+									<h4 class="uk-text-bold">CLOSET ONE</h4>
+								</div>
+								<div class="uk-card-body uk-flex-1">
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>9<small>.99</small>
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+									<ul>
+										<a href="#" class="uk-button uk-button-primary uk-margin uk-width-1-1">Ichiban</a>
+										<a href="#" class="uk-button uk-button-primary uk-margin uk-width-1-1">Kitsune</a>
+										<a href="#" class="uk-button uk-button-primary uk-margin uk-width-1-1">Kokoro</a>
+										<a href="#" class="uk-button uk-button-primary uk-margin uk-width-1-1">Ongaku</a>
+										<a href="#" class="uk-button uk-button-primary uk-margin uk-width-1-1">Shinobi</a>
+										<a href="#" class="uk-button uk-button-primary uk-margin uk-width-1-1">OKINAMI</a>
+									</ul>
+								</div>
+								<div class="uk-card-footer">
+									<a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-icon-button" data-uk-icon="move">MOVEABLE TYPE</a> 								
+
+								</div>
+							</div>
+						</div>
+						<!-- /kanban -->
+						
+						<!--kanban-->
+						<div>
+							<div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column">
+								<div class="uk-card-header uk-text-center">
+									<h4 class="uk-text-bold">CLOSET 2</h4>
+								</div>
+								<div class="uk-card-body uk-flex-1">
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>89<small>.99</small>
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+									<ul>
+										<button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Changes</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Difference</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Variety</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Visage</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">HOSHI</button>
+									</ul>
+								</div>
+								<div class="uk-card-footer">
+									<span class="uk-button uk-button-primary uk-width-1-1">BUY NOW <p class="uk-icon-button" data-uk-icon="credit-card"></p></span> 								
+
+								</div>
+							</div>
+						</div>
+						<!-- /kanban -->
+            						<!--kanban-->
+						<div>
+							<div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column">
+								<div class="uk-card-header uk-text-center">
+									<h4 class="uk-text-bold">CLOSET 3</h4>
+								</div>
+								<div class="uk-card-body uk-flex-1">
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>89<small>.99</small>
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+									<ul>
+										<button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Changes</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Difference</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Variety</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">Visage</button>
+										<hr><button class="uk-button uk-button-secondary uk-box-shadow-small uk-margin">HOSHI</button>
+									</ul>
+								</div>
+								<div class="uk-card-footer">
+									<span class="uk-button uk-button-primary uk-width-1-1">BUY NOW <p class="uk-icon-button" data-uk-icon="credit-card"></p></span> 								
+
+								</div>
+							</div>
+						</div>
+						<!-- /kanban -->
+						<!--kanban-->
+						<div>
+							<div class="uk-card uk-card-default uk-flex uk-card-hover uk-flex-column" data-uk-scrollspy-class="uk-animation-slide-right-small">
+								<div class="uk-card-header uk-text-center">
+									<h4 class="uk-text-bold">CLOSET 4</h4>
+								</div>
+								<div class="uk-card-body uk-flex-1">
+									<div class="uk-flex uk-flex-middle uk-flex-center">
+										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
+											<span style="font-size: 0.5em">$</span>299
+										</span>
+									</div>
+									<div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+									<ul>
+										<a class="uk-button uk-button-default uk-margin uk-width-1-1" href="#modal" uk-toggle>Diffusiae</a>
+										<div id="modal" uk-modal>
+											<div class="uk-modal-dialog uk-modal-body">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<h2 class="uk-modal-title">Headline</h2>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="uk-text-right">
+													<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+													<button class="uk-button uk-button-primary" type="button">Save</button>
+												</p>
+											</div>
+										</div>
+										<hr>
+										<a class="uk-button uk-button-default uk-margin uk-width-1-1" href="#modal" uk-toggle>Sorbone</a>
+										<div id="modal" uk-modal>
+											<div class="uk-modal-dialog uk-modal-body">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<h2 class="uk-modal-title">Headline</h2>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="uk-text-right">
+													<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+													<button class="uk-button uk-button-primary" type="button">Save</button>
+												</p>
+											</div>
+										</div>
+										<hr><a class="uk-button uk-button-default uk-margin uk-width-1-1" href="#modal" uk-toggle>Aquisty</a>
+										<div id="modal" uk-modal>
+											<div class="uk-modal-dialog uk-modal-body">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<h2 class="uk-modal-title">NOECIAE</h2>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="uk-text-right">
+													<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+													<button class="uk-button uk-button-primary" type="button">Save</button>
+												</p>
+											</div>
+										</div>
+										<hr><a class="uk-button uk-button-default uk-margin uk-width-1-1" href="#modal" uk-toggle>Apollo</a>
+										<div id="modal" uk-modal>
+											<div class="uk-modal-dialog uk-modal-body">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<h2 class="uk-modal-title">Headline</h2>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="uk-text-right">
+													<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+													<button class="uk-button uk-button-primary" type="button">Save</button>
+												</p>
+											</div>
+											</div><hr><a class="uk-button uk-button-default uk-margin uk-width-1-1" href="#modal" uk-toggle>Cassini</a>
+											<div id="modal" uk-modal>
+												<div class="uk-modal-dialog uk-modal-body">
+													<button class="uk-modal-close-default" type="button" uk-close></button>
+													<h2 class="uk-modal-title">Vanilla IceCream</h2>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+													<p class="uk-text-right">
+														<button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+														<button class="uk-button uk-button-primary" type="button">Save</button>
+													</p>
+												</div>
+											</div>
+										</ul>
+									</div>
+									<div class="uk-card-footer">
+										<a href="" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+									</div>
+								</div>
+							</div>
+							<!-- /kanban -->
+							
+						</div>
+						<div class="uk-text-center uk-text-small uk-text-muted uk-section uk-section-small">
+						<a href="#more" title="More about Dragons" data-uk-icon="album" data-uk-scroll="duration: 400" class="uk-button uk-button-secondary uk-margin-medium-top uk-button-large">MORE ABOUT DRAGONS</a>
+						</div>
+					</div>
+				</section>
+			
+				<!--FOOTER-->
+				<footer class="uk-section-secondary">
+					<div class="uk-container uk-section">
+						<div class="uk-grid uk-child-width-1-3@l" data-uk-grid>
+							<div>
+								<h4>Our Company</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li><a href="#" title="Laboris nisi ut aliquip">Laboris nisi ut aliquip</a></li>
+									<li><a href="#" title="Excepteur sint occaecat">Excepteur sint occaecat</a></li>
+									<li><a href="#" title="Culpa qui officia">Culpa qui officia</a></li>
+									<li><a href="#" title="Duis aute irure dolor">Duis aute irure dolor</a></li>
+									<li><a href="#" title="Consectetur adipisicing">Consectetur adipisicing</a></li>
+								</ul>
+							</div>
+							
+							<div>
+								<h4>Our Offices</h4>
+								<ul class="uk-list uk-list-bullet">
+									<li><a href="#" title="Laboris nisi ut aliquip">Laboris nisi ut aliquip</a></li>
+									<li><a href="#" title="Excepteur sint occaecat">Excepteur sint occaecat</a></li>
+									<li><a href="#" title="Culpa qui officia">Culpa qui officia</a></li>
+									<li><a href="#" title="Duis aute irure dolor">Duis aute irure dolor</a></li>
+									<li><a href="#" title="Consectetur adipisicing">Consectetur adipisicing</a></li>
+								</ul>
+							</div>
+							<div>
+								<h4>Suscribe</h4>
+								<form class="uk-grid uk-grid-collapse" action="price.html" data-uk-grid>
+									<div class="uk-width-expand">
+										<input class="uk-input" type="email" required name="email" placeholder="Your E-mail">
+									</div>
+									<div class="uk-width-auto">
+										<button class="uk-button uk-button-primary" data-uk-icon="check"></button>
+									</div>
+								</form>
+								<h4>Social Media</h4>
+								<a href="" class="uk-icon-button  uk-margin-small-right" data-uk-icon="facebook"></a>
+								<a href="" class="uk-icon-button  uk-margin-small-right" data-uk-icon="twitter"></a>
+								<a href="" class="uk-icon-button" data-uk-icon="instagram"></a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-section uk-section-xsmall" style="background-color: rgba(0,0,0,0.15)">
+						<div class="uk-container">
+							<div class="uk-grid uk-child-width-1-2@s uk-text-center uk-text-left@s" data-uk-grid>
+								<div class="uk-text-small uk-text-muted">
+									Copyright 2018 - All rights reserved.
+								</div>
+								<div class="uk-text-small uk-text-muted uk-text-center uk-text-right@s">
+									<a href="https://github.com/zzseba78/Kick-Off" target="_blank" title="Created by KickOff">Created by KickOff</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!--/FOOTER-->
+			</div>
+			<!-- JS FILES -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+			
+		</body>
+	</html>
