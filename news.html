@@ -285,7 +285,7 @@
 <!--FOOTER-->
 <footer class="uk-section uk-section-small uk-section-muted">
   <div class="uk-container">
-    <p class="uk-text-small uk-text-center">Copyright 2018 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit tristique tortor vel ultricies. </p>
+    <p class="uk-text-small uk-text-center">Copyright 2019 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit tristique tortor vel ultricies. </p>
   </div>
 </footer>
 <!--/FOOTER-->
@@ -295,11 +295,7 @@
     <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
     <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
       <div class="uk-background-cover" style="background-image: url('https://source.unsplash.com/61GURVXtNJQ');" uk-height-viewport></div>
-      <div class="uk-padding-large">
-        <h1>Headline</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      <div class="uk-padding-large" id="hi"> </div>
     </div>
   </div>
 </div>
@@ -350,5 +346,25 @@
 <!-- JS FILES -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+    
+    <script>
+    const url = "https://api.telegra.ph/getPage/Ex-Oblivione-06-08?return_content=true"
+
+
+axios.get(url).then(response => {for(let i=0; i<response.data.result.content.length;i++){
+    console.log(response.data.result.content[i].children.map(x=>"<p>"+x+"</p>"))
+}}
+)
+
+axios.get(url).then(response => {
+    document.getElementById("hi").innerHTML+="<h2>"+response.data.result.title+"</h2>";
+    document.getElementById("hi").innerHTML+="<p>"+response.data.result.author_name+"</p>";
+    for(let i=0; i<response.data.result.content.length;i++){
+    document.getElementById("hi").innerHTML+=(response.data.result.content[i].children.map(x=>"<p>"+x+"</p>"))
+}}
+)
+
+
+    </script>
 </body>
 </html>
