@@ -356,33 +356,37 @@
         formatResponse(response.data.result.content);
     });
 
-    function formatResponse(arr) {
-      var hiEl = document.getElementById("hi");
-      for(let i=0; i<arr.length;i++){
-        var o = arr[i];
-        var tag = o.tag;
-        var el = "<"+tag+">";
-        for(let j=0;j<o.children.length;j++) {
-          var c = o.children[j];
-          if(typeof c === 'object') {
-            if(c.hasOwnProperty('children')) {
-              el += "<"+c.tag+">"+c.children[0]+"</"+c.tag+">";
-            } else if(c.hasOwnProperty('attrs')) {
-              el += "<"+c.tag+" ";
-              for(var attr in c.attrs) {
-                el += attr + "=\"" + c.attrs[attr] + "\" ";
-              }
-              el += "></"+c.tag+">";
+function formatResponse(arr) {
+  var hiEl = document.getElementById("hi");
+  for(let i=0; i<arr.length;i++){
+    var o = arr[i];
+    var tag = o.tag;
+    var el = "<"+tag+">";
+    for(let j=0;j<o.children.length;j++) {
+      var c = o.children[j];
+      if(typeof c === 'object') {
+        if(c.hasOwnProperty('children')) {
+          el += "<"+c.tag+">"+c.children[0]+"</"+c.tag+">";
+        } else if(c.hasOwnProperty('attrs')) {
+          el += "<"+c.tag+" ";
+          for(var attr in c.attrs) {
+            if(attr === "src") {
+              el += attr + "=\"https://telegra.ph" + c.attrs[attr] + "\" ";
+            } else {
+              el += attr + "=\"" + c.attrs[attr] + "\" ";
             }
-          } else {
-            el+= c;
           }
-          el+="</"+tag+">"
+          el += "></"+c.tag+">";
         }
-
-        hiEl.innerHTML += el;
+      } else {
+        el+= c;
       }
     }
+    el+="</"+tag+">";
+
+    hiEl.innerHTML += el;
+  }
+}
 </script>
 </body>
 </html>
