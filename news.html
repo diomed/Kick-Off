@@ -362,13 +362,17 @@
         var o = arr[i];
         var tag = o.tag;
         var el = "<"+tag+">";
-        // hiEl.appendChild(el);
         for(let j=0;j<o.children.length;j++) {
           var c = o.children[j];
           if(typeof c === 'object') {
             if(c.hasOwnProperty('children')) {
-              // console.log(c.children[0]);
               el += "<"+c.tag+">"+c.children[0]+"</"+c.tag+">";
+            } else if(c.hasOwnProperty('attrs')) {
+              el += "<"+c.tag+" ";
+              for(var attr in c.attrs) {
+                el += attr + "=\"" + c.attrs[attr] + "\" ";
+              }
+              el += "></"+c.tag+">";
             }
           } else {
             el+= c;
