@@ -348,24 +348,37 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
+<script>
     const url = "https://api.telegra.ph/getPage/Ex-Oblivione-06-08?return_content=true"
+    axios.get(url).then(response => {
+        document.getElementById("hi").innerHTML+="<h2>"+response.data.result.title+"</h2>";
+        document.getElementById("hi").innerHTML+="<p>"+response.data.result.author_name+"</p>";
+        formatResponse(response.data.result.content);
+    });
 
+    function formatResponse(arr) {
+      var hiEl = document.getElementById("hi");
+      for(let i=0; i<arr.length;i++){
+        var o = arr[i];
+        var tag = o.tag;
+        var el = "<"+tag+">";
+        // hiEl.appendChild(el);
+        for(let j=0;j<o.children.length;j++) {
+          var c = o.children[j];
+          if(typeof c === 'object') {
+            if(c.hasOwnProperty('children')) {
+              // console.log(c.children[0]);
+              el += "<"+c.tag+">"+c.children[0]+"</"+c.tag+">";
+            }
+          } else {
+            el+= c;
+          }
+          el+="</"+tag+">"
+        }
 
-axios.get(url).then(response => {for(let i=0; i<response.data.result.content.length;i++){
-    console.log(response.data.result.content[i].children.map(x=>"<p>"+x+"</p>"))
-}}
-)
-
-axios.get(url).then(response => {
-    document.getElementById("hi").innerHTML+="<h2>"+response.data.result.title+"</h2>";
-    document.getElementById("hi").innerHTML+="<p>"+response.data.result.author_name+"</p>";
-    for(let i=0; i<response.data.result.content.length;i++){
-    document.getElementById("hi").innerHTML+=(response.data.result.content[i].children.map(x=>"<p>"+x+"</p>"))
-}}
-)
-
-
-    </script>
+        hiEl.innerHTML += el;
+      }
+    }
+</script>
 </body>
 </html>
